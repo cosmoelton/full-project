@@ -87,5 +87,52 @@ response.json({token});
 
 };
 
+//Listar todos os Usuários
+     const listUsres = (request , response) => {
+        const{data, error} = await supabase.from("users")
+        .select("id", nome, email);
+
+        if (error){
+            return response. status(500).json({
+                erro: "Erro:", error
+            });
+
+        };
+    response.json(data);
+ };
+
+ //Atualizar dados de um registro (usuário)
+
+ const updateUser = async (request , response) => {
+    const {id} = request.params;
+    const {nome, email, senha} = request.boby;
+
+//cria um hash para senha informada
+const passwordHashed = await bcrypt.hast(senhainformada, 10);
+
+    const dataUpdated = {
+
+        ...(nome && {nome}),
+        ...(email && {email}),
+        ...(senha && {senha: senhainformada})
+    }
+
+    const {error} = await supabase.from("users")
+    .update(dataUpdated)
+    .eq("id", id);
+
+    if (error){
+        return response.status(500).json({
+             error: "Erro:", error
+
+        })
+
+        response.json({
+            mensagem: "Usuário atualizado com sucesso"
+        })
+   }
+
+ //Exclir registro (Usuário)
+ };
 
 
