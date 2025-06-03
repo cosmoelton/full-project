@@ -7,10 +7,9 @@ import supabase from "../config/supabase";
 import { error } from "console";
 
 //Cadastro de Usuário
-// async function registerUser (request, response,){
 const registerUser = async (request, response) => {
 
-//Desestruturação do Objeto
+// Desestruturação do objeto
 const {nome, email, senhainformada} = request.boby;
 
 //cria um hash para senha informada
@@ -57,7 +56,7 @@ const {data: user, error} = await supabase.from('users')
 .eq("email", email)
 .single();
 
-if (error || !users) {
+if (error || !user) {
 
     return response.status(401).json({
         mensagem: "Credencias inválidas"
