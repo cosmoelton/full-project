@@ -50,6 +50,7 @@ full-project/
 │ └── package.json
 ├── .env
 └── README.md
+``
 
 
 
