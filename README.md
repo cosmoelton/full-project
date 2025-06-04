@@ -28,8 +28,6 @@ Este projeto é uma aplicação **Full Stack** utilizando **JavaScript**, com as
 
 ### 📦 Estrutura de Pastas
 
-### 📦 Estrutura de Pastas
-
 ```
 projeto-full-stack-auth-app/
 ├── backend/
@@ -56,11 +54,8 @@ projeto-full-stack-auth-app/
 
 🚧 Em desenvolvimento
 
-
-🚧 Em desenvolvimento
-
 ``bash
-/api/users/register   → Criação de novo usuário  
+/api/users/register   → Criação de novo usuário
 /api/users/login      → Login e geração de token  
 /api/users/:id        → Atualização ou deleção de usuário (protegido)  
 /api/users/           → Listagem de usuários (protegido)
