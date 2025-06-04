@@ -27,7 +27,7 @@ Este projeto é uma aplicação **Full Stack** utilizando **JavaScript**, com as
 - Middleware de autorização via JWT
 
 ### 📦 Estrutura de Pastas
-
+``
 projeto-full-stack-auth-app/
 full-project/
 ├── backend/
