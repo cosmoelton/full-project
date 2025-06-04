@@ -28,27 +28,34 @@ Este projeto é uma aplicação **Full Stack** utilizando **JavaScript**, com as
 
 ### 📦 Estrutura de Pastas
 
-``projeto-full-stack-auth-app/
+### 📦 Estrutura de Pastas
+
+```
+projeto-full-stack-auth-app/
 ├── backend/
-│ ├── controllers/
-│ ├── middleware/
-│ ├── models/
-│ ├── routes/
-│ ├── config/
-│ ├── app.js
-│ ├── server.js
-│ └── package.json
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   ├── app.js
+│   ├── server.js
+│   └── package.json
 ├── frontend/
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── services/
-│ │ ├── App.js
-│ │ └── index.js
-│ └── package.json
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
 ├── .env
 └── README.md
+```
+
+🚧 Em desenvolvimento
+
 
 🚧 Em desenvolvimento
 
