@@ -52,11 +52,29 @@ projeto-full-stack-auth-app/
 └── README.md
 ```
 
-🚧 Em desenvolvimento
+🔐 Funcionalidades
 
-``bash
+    Registro de usuários com hash de senha usando Bcrypt
+
+    Login e autenticação via JWT com validade de 1 dia
+
+    Rotas protegidas com middleware de autenticação
+
+    CRUD básico para usuários (listagem, atualização, exclusão)
+
+    Estrutura modularizada com routers e controllers
+
+    ``bash
 /api/users/register   → Criação de novo usuário
 /api/users/login      → Login e geração de token  
 /api/users/:id        → Atualização ou deleção de usuário (protegido)  
 /api/users/           → Listagem de usuários (protegido)
-...
+
+📬 Contato
+
+Para dúvidas ou sugestões, entre em contato:
+COSMO ELTON
+
+🚧 Status
+
+Projeto em desenvolvimento.
