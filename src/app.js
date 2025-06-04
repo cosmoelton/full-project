@@ -1,14 +1,15 @@
+//import dotenv from "dotenv";
+import 'dotenv/config'; 
 import express from "express";
 import cors from "cors";
-import env from "dotenv";
-import userRouter from "./routes/user.routes";
+import userRouter from "./routes/user.routes.js";
 // import pruductRouter from "./routes/produt.routes";
 // import categoryRouter from "./routes/category.routes";
 
 
 
 
-env.config();
+//env.config();
 const app = express();
 
 app.use(cors());
