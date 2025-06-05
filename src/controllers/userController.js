@@ -5,10 +5,10 @@ import jwt from "jsonwebtoken";
 // Cadastro de Usuário
 const registerUser = async (request, response) => {
     // Desestruturação do objeto
-    const { nome, email, senha: senhainformada } = request.body;
+    const { nome, email, senha: senha } = request.body;
 
     // Cria um Hash para a senha informada
-    const passwordHashed = await bcrypt.hash(senhainformada, 10);
+    const passwordHashed = await bcrypt.hash(senha, 10);
 
     // Abre a conexão com o Supabase (tabela Users)
     const { data, error } = await supabase.from("users").insert([

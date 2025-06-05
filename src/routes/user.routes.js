@@ -1,20 +1,18 @@
-import { Router } from "express";
 import express from "express";
+// import { Router } from "express";
 import controller from "../controllers/userController.js";
-import auth from '../middlewares/auth.js';
+// import auth from '../middlewares/auth.js';
 //import auth from "../middlewares/auth";
 
 
-const router = express.Router();
+userRoutes.post("/register", controller.registerUser);
+userRoutes.post("/login", controller.authentication);
 
-router.get("/", auth, controller.listUsers);
+// userRoutes.get("/", auth, controller.listUsers);
+userRoutes.get("/", controller.listUsers);
+// userRoutes.put("/:id", auth, controller.updateUser);
+userRoutes.put("/:id", controller.updateUser);
+// userRoutes.delete("/:id", auth, controller.deleteUser);
+userRoutes.delete("/:id", controller.deleteUser);
 
-router.post("/register", controller.registerUser);
-
-router.post("/login", controller.authentication)
-
-router.put("/:id", auth, controller.updateUser);
-
-router.delete(":id", auth, controller.deleteUser);
-
-export default router;
+export default userRoutes;
